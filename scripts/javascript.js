@@ -1,7 +1,7 @@
 
 var box= document.getElementById('display');
 
-//text to show on screen
+//buttons to show in text box
 function addtoscreen(x){
   box.value +=x;
 
@@ -11,14 +11,14 @@ function addtoscreen(x){
 
 }
 
-
+//equals button
 function answer(){
   x=box.value;
   x=eval(x);
   box.value=x;
 }
 
-
+//return button
 function backspace(){
   var number=box.value;
   var len=number.length-1;
@@ -26,6 +26,7 @@ function backspace(){
   box.value=newNumber;
 }
 
+// power ^3 button
 function power(y){
   x=box.value;
   x=Math.pow(x,y);
